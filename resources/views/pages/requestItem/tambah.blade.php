@@ -21,7 +21,7 @@
                     </div>
                 @endif
                 <div class="alert alert-info">
-                    <span class="text-info"><b>INFO!</b> Qty yang di butuhkan untuk memproduksi 1 pcs/ unit</span>
+                    {{-- <span class="text-info"><b>INFO!</b> Qty yang di butuhkan untuk memproduksi 1 pcs/ unit</span> --}}
 
                 </div>
                 <form action="{{ url('post-request') }}" method="POST">

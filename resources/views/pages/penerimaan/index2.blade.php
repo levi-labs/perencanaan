@@ -16,10 +16,10 @@
                     @elseif(session('failed'))
                         <div class="alert alert-danger">{{ session('failed') }}</div>
                     @endif
-                    @if (auth()->user()->akses_user == 'Produksi' || auth()->user()->akses_user == 'Admin')
+                    {{-- @if (auth()->user()->akses_user == 'Produksi' || auth()->user()->akses_user == 'Admin')
                         <button type="button" onclick="window.location.href='/tambah-request'"
                             class="btn btn-primary btn-sm">Request Baru</button>
-                    @endif
+                    @endif --}}
 
                     {{-- <h4 class="card-title">Bordered Table</h4> --}}
                 </div>
