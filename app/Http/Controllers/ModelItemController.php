@@ -123,7 +123,7 @@ class ModelItemController extends Controller
                 $modelItem->qty_model       = $qty[$i];
                 $modelItem->save();
             }
-            return redirect('daftar-model')->with('success', 'Data request berhasil di disimpan...!');
+            return redirect('daftar-model')->with('success', 'Data Model berhasil di disimpan...!');
         } catch (\Exception $e) {
             return back()->with('failed', $e->getMessage());
         }
@@ -173,6 +173,8 @@ class ModelItemController extends Controller
      */
     public function destroy(ModelItem $modelItem)
     {
-        //
+        $modelItem->delete();
+
+        return back()->with('success', 'Model berhasil dihapus...!');
     }
 }
